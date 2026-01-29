@@ -22,6 +22,13 @@ export default function Index() {
           <Text>Goto third screen directly</Text>
         </Pressable>
       </Link>
+
+      <Pressable
+        style={styles.button}
+        onPress={() => router.push("/fifth/sixth")}
+      >
+        <Text>Goto deeply nested screen</Text>
+      </Pressable>
     </View>
   );
 }
